@@ -11,12 +11,12 @@ This is a small software application developed in Golang. It can be run from a c
 
 ### How to use
 Make sure you have GO installed on your machine, otherwise go to [How to install GO](https://golang.org/doc/install). Then
-cd (change directory) to your root project folder and create a build: `go build` - it will create binary file with project name `cmd-go-sql`
+cd (change directory) to your root project folder and create a build: `go build` - it will create binary file with project name `cmd-go-sql`.
 Now you can run application
 `./cmd-go-sql` - without parameter
 or
-`./cmd-go-sql table_name` with parameter
-you will see all information about newly created table and intermediate processes in prompt
+`./cmd-go-sql table_name` with parameter.
+You will see all information about newly created table and intermediate processes in prompt
 
 #### Copyright
 Copyright © 2017 Infotecture Development Pty Ltd.
