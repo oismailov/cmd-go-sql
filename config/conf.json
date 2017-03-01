@@ -1,0 +1,9 @@
+{
+  "DatabaseSettings": {
+    "DatabaseName": "cmd_go_sql",
+    "DatabasePassword": "4hZVYf79",
+    "DatabaseUsername": "root",
+    "DatabaseHost": "localhost",
+    "DatabasePort": "3306"
+  }
+}
