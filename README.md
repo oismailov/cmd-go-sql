@@ -2,7 +2,7 @@
 This is a small software application developed in Golang. It can be run from a command prompt. It takes input parameters, interact with mysql database, and perform SQL operations.
 
 ### This application will perform following operations
-1. It finds such a table with name ending at `_ReportName` and has been most recently created. Lets call this table as 'Source' from here on.
+1. It takes first parameter (if provided) and search a table with name ending at given value and has been most recently created. Lets call this table as 'Source' from here on. If parameter wasn't provided - it takes default value: `_ReportName`
 2. The table found in step 1 is read and some transformations (listed below) are applied on it, such that the original table is left unchanged, and the transformed data is saved as a new table with name as "timestamp_ReportName_New". The newly created table will be referred to as 'Destination' in this description from here on.
 
 ### The transformations are
