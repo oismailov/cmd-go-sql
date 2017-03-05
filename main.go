@@ -3,6 +3,7 @@ package main
 import (
 	"cmd-go-sql/config"
 	"cmd-go-sql/models"
+	"flag"
 	"fmt"
 	"os"
 )
@@ -19,11 +20,14 @@ func main() {
 	models.InitDatabaseSession()
 
 	//read arguments from cmd
+	flag.StringVar(&tableNameToFind, "source", defaultTableName, "a source table to find")
+
+	//execute the command-line parsing
+	flag.Parse()
+
+	//check if arguments were provided
 	if len(os.Args) == 1 {
-		tableNameToFind = defaultTableName
 		fmt.Println("you didn't provide table name. Default value is '" + defaultTableName + "'")
-	} else {
-		tableNameToFind = os.Args[1]
 	}
 
 	//finds table that ends with name {tableNameToFind}
