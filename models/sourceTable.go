@@ -1,6 +1,9 @@
 package models
 
-import "cmd-go-sql/config"
+import (
+	"cmd-go-sql/config"
+	"fmt"
+)
 
 //finds table that ends with {name} and returns its name
 func SourceTableFinder(name string) string {
@@ -16,5 +19,6 @@ func SourceTableFinder(name string) string {
 	db := GetDatabaseSession()
 	db.Raw(sql, config.Cfg.DatabaseSettings.DatabaseName, "%"+name).Row().Scan(&sourceTable)
 
+	fmt.Println(sourceTable)
 	return sourceTable
 }
