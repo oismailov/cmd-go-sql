@@ -10,11 +10,11 @@ This is a small software application developed in Golang. It can be run from a c
 2. Each record will be duplicated in the Destination, such that the duplicate record will be exactly below to the original record.
 
 ### How to use
-Make sure you have GO installed on your machine, otherwise go to [How to install GO](https://golang.org/doc/install). Once Golang has been installed please go to `config/conf.json` file and change your databse settings: user, password, host, port, database name. Then cd (change directory) to your root project folder and create a build: `go build` - it will create binary file with project name `cmd-go-sql`.
-Now you can run application
-`./cmd-go-sql` - without parameter
-or
-`./cmd-go-sql -source="table name"` with parameter.
+Make sure you have GO installed on your machine, otherwise go to [How to install GO](https://golang.org/doc/install). Once Golang has been installed please go to `config/conf.json` file and change your databse settings: user, password, host, port, database name. Then cd (change directory) to your root project folder and create a build: `go build` - it will create binary file with project name `cmd-go-sql`.<br>
+Now you can run application<br>
+`./cmd-go-sql` - without parameter<br>
+or<br>
+`./cmd-go-sql -source="table name"` with parameter.<br>
 You will see all information about newly created table and intermediate processes in prompt
 
 ###Update 2017-03-05
