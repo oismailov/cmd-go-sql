@@ -17,8 +17,5 @@ or<br>
 `./cmd-go-sql -source="table name"` with parameter.<br>
 You will see all information about newly created table and intermediate processes in prompt
 
-###Update 2017-03-05
-A second parameter for the command has been introduced, for the destination table name. If we run this utility again and again with the same destination table name (as a second argument to the command), it should overwrite the existing table (if exists with the same name) without raising any issue.
-
 #### Copyright
 Copyright © 2017 Infotecture Development Pty Ltd.
